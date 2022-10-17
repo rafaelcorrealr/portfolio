@@ -10,7 +10,7 @@ export const Header = styled.nav`
         justify-content: space-between;
     }
     `
-
+//PhotoHeader é uma opção para mobile, somente mobile.
 export const PhotoHeader = styled.div`
     @media(max-width: 425px) {
         color: black;
@@ -26,6 +26,5 @@ export const PhotoHeader = styled.div`
     }
     @media(min-width: 426px){
         visibility: hidden;
-
     }
 `

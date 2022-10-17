@@ -8,15 +8,18 @@ const Home = () => {
                     <p>Rafael Corrêa</p>
                 </PhotoHeader>
                 <div>
-                    <p>Sobre</p>
-                    <p>Tecnologias</p>
-                    <p>Projetos</p>
-                </div>
-                <div>
-                    <p>Linkedin</p>
-                    <p>GitHUB</p>
-                    <p>WhatsApp</p>
-                    <p>Instagram</p>
+                    <a href="#0" role="button" aria-haspopup="true" aria-expanded="false">Box</a>
+                    <ul>
+                        <li><a href="#0">Sobre</a></li>
+                        <li>Tecnologias</li>
+                        <li>Projetos</li>
+                    </ul>
+                    <div>
+                        <p>Linkedin</p>
+                        <p>GitHUB</p>
+                        <p>WhatsApp</p>
+                        <p>Instagram</p>
+                    </div>
                 </div>
             </Header>
             <body>
