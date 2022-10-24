@@ -1,27 +1,10 @@
 import {Header, PhotoHeader} from "./style"
+
+import NavBar from "../../components/navbar"
 const Home = () => {
     return (
         <>
-            <Header>
-                <PhotoHeader>
-                    <span></span>
-                    <p>Rafael Corrêa</p>
-                </PhotoHeader>
-                <div>
-                    <a href="#0" role="button" aria-haspopup="true" aria-expanded="false">Box</a>
-                    <ul>
-                        <li><a href="#0">Sobre</a></li>
-                        <li>Tecnologias</li>
-                        <li>Projetos</li>
-                    </ul>
-                    <div>
-                        <p>Linkedin</p>
-                        <p>GitHUB</p>
-                        <p>WhatsApp</p>
-                        <p>Instagram</p>
-                    </div>
-                </div>
-            </Header>
+            <NavBar/>
             <body>
                 <div>
                     <div>

@@ -6,7 +6,12 @@ export default createGlobalStyle`
    License: none (public domain)
 */
 /* FIGMA */
-body{
+:root
+{
+    --color1: #538DBF;
+}
+body
+{
     background-color: #1C4368;
     color: #FFFFFF;
 }
