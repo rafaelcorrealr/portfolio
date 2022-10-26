@@ -1,11 +1,9 @@
-import {Header, PhotoHeader} from "./style"
 
 import NavBar from "../../components/navbar"
 const Home = () => {
     return (
         <>
             <NavBar/>
-            <body>
                 <div>
                     <div>
                         <h2>Rafael Corrêa</h2> 
@@ -33,7 +31,6 @@ Desde criança sou apaixonado por tecnologia e empreendedorismo, por isso sou mu
                     <p>Obrigado pelo acesso!</p>
                     <p>Entre em contato comgio para qualquer feedback. </p>
                 </footer>
-            </body>
         </>
     )
 } 

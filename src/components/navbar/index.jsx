@@ -1,17 +1,36 @@
-import { Header, PhotoHeader } from "./style"
+import { Header } from "./style"
 
-import photo from "../../img/phototest.jpeg"
+import phototest from "../../img/phototest.jpeg"
 
 const NavBar = () => {
     // const photo = 
+    // const show = (a) => {
+    //     document.querySelector("boxDropdown").value = a
+    // }
+
     return (
         <>
         <Header>
-            <div>
-                <PhotoHeader>
-                    <img src={photo}/>
+            <div className="mobile">
+                <div className="photoHeader">
+                    <img src={phototest} alt="foto"/>
                     <h3>Rafael Corrêa</h3>
-                </PhotoHeader>
+                </div>
+                <div className="boxDropdown">
+                    <div className="box">
+                        <span className="linha"></span>
+                        <span className="linha"></span>
+                        <span className="linha"></span>
+                    </div>
+                    <div className="dropdown">
+                        <ul>
+                            <li>Sobre</li>
+                            <li>Tecnologias</li>
+                            <li>Projetos</li>
+                            <li>Contatos</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </Header>
         </>
@@ -19,28 +38,3 @@ const NavBar = () => {
 }
 
 export default NavBar
-
-{/* <Header>
-<PhotoHeader>
-    <span></span>
-    <p>Rafael Corrêa</p>
-</PhotoHeader>
-<ul>
-    <a>Box</a>
-    <li>
-        <ul>
-            <li><a href="#0">Sobre</a></li>
-            <li>Tecnologias</li>
-            <li>Projetos</li>
-        </ul>
-    </li>
-    <li>
-        <ul>
-            <p>Linkedin</p>
-            <p>GitHUB</p>
-            <p>WhatsApp</p>
-            <p>Instagram</p>
-        </ul>
-    </li>
-</ul>
-</Header> */}

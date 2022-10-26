@@ -5,34 +5,62 @@ export const Header = styled.div`
         width:100%;
         height: 60px;
         background-color: var(--color1);
+       
+        .mobile
+        {
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
 
-        display:flex;
-        justify-content: space-between;
-    }
-    `
-//PhotoHeader é uma opção para mobile, somente mobile.
-export const PhotoHeader = styled.div`
-    @media(max-width: 425px) {
-        color: black;
-        display:flex;
-        justify-content: baseline;
+        .mobile .photoHeader
+        {
+            color: black;
+            display: flex;
+            justify-content: baseline;
+        }
 
-        img{
-            border: 1px black solid; /*Deixado aqui para vizualização.*/
-            border-radius: 50px;
+        .mobile .photoHeader img
+        {
+            border: #000 1px solid;
+            border-radius: 50%;
             width: 45px;
             height: 45px;
-            margin: 10px 0 0 10px ;
+            margin: 10px 0 0 10px;
         }
-    }
-    @media(min-width: 426px){
-        visibility: hidden;
-        opacity: 0;
-    }
-`
 
-export const Dropdown = styled.a`
-    @media(max-width: 425px){
-        
+        .mobile .photoHeader h3
+        {
+            color: #fff;
+            margin-left: 5px;
+        }
+
+        .mobile .boxDropdown
+        {
+            width: 45px;
+            height: 30px;
+            margin: 15px 10px 0 0;
+        }
+
+        .mobile .boxDropdown .box
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+
+        }
+        .mobile .boxDropdown .box .linha
+        {
+            position: relative;
+            display: block;
+            height: 2.8px;
+            width: 30px;
+            background: #fff;
+            border-radius: 20px;
+        }
+
     }
-`
+    `
