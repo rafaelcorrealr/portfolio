@@ -39,11 +39,16 @@ export const Header = styled.div`
         {
             width: 45px;
             height: 30px;
-            margin: 15px 10px 0 0;
+            margin: 15px 40px 0 0;
         }
 
         .mobile .boxDropdown .box
         {
+            /* RESET BUTTON */
+            border: none;
+            padding: 0;
+            background: transparent;
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -62,5 +67,29 @@ export const Header = styled.div`
             border-radius: 20px;
         }
 
+        .mobile .boxDropdown .dropdown
+        {
+            list-style: none;
+            /* padding: 0 0px 0 0; */
+            margin: 0;
+
+            width: 90px;
+            height: 150px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+
+            background: var(--color1);
+
+            position: relative;
+            top: 20px;
+            right: 90px;
+            border-radius: 20px 0;
+            box-shadow: 2px 2px 10px #fff;
+
+            transition: 0.25s;
+        }
     }
     `
